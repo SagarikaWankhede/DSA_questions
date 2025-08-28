@@ -6,12 +6,13 @@ class TriDiagonal {
 public:
     TriDiagonal(int n) {
         this->n = n;
-        A = new int[3*n - 2]; 
+        A = new int[3*n - 2]; // Only store 3 diagonals
     }
     void set(int i, int j, int x) {
-        if (i-j == 0) A[n-1+i-1] = x;        
-        else if (i-j == 1) A[i-2] = x;
-        else if (i-j == -1) A[2*n-1 + i-1] = x;
+        if (i-j == 0) A[n-1+i-1] = x;         // main diagonal
+        else if (i-j == 1) A[i-2] = x;        // lower diagonal
+        else if (i-j == -1) A[2*n-1 + i-1] = x; // upper diagonal
+    }
     int get(int i, int j) {
         if (i-j == 0) return A[n-1+i-1];
         else if (i-j == 1) return A[i-2];
@@ -26,5 +27,5 @@ public:
             cout << endl;
         }
     }
+};
 
-}
