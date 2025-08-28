@@ -6,7 +6,7 @@ class Diagonal {
 public:
     Diagonal(int n) {
         this->n = n;
-        A = new int[n];   // Only store diagonal elements
+        A = new int[n];   
     }
     void set(int i, int j, int x) {
         if (i == j) A[i-1] = x;
