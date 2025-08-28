@@ -24,3 +24,14 @@ public:
         }
     }
 };
+int main() {
+    int n = 4;
+
+    cout << "\nUpper Triangular Matrix:\n";
+    UpperTriangular u(n);
+    u.set(1,1,1); u.set(1,2,2); u.set(1,3,3); u.set(1,4,4);
+    u.set(2,2,5); u.set(2,3,6); u.set(2,4,7);
+    u.display();
+
+    return 0;
+}

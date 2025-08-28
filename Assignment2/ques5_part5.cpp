@@ -25,3 +25,15 @@ public:
         }
     }
 };
+int main() {
+    int n = 4;
+
+    cout << "\nSymmetric Matrix:\n";
+    Symmetric s(n);
+    s.set(1,1,1); s.set(2,1,2); s.set(2,2,3);
+    s.set(3,1,4); s.set(3,2,5); s.set(3,3,6);
+    s.set(4,4,7);
+    s.display();
+
+    return 0;
+}

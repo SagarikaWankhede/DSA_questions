@@ -25,3 +25,12 @@ public:
         }
     }
 };
+int main() {
+    int n = 4;
+
+    cout << "Diagonal Matrix:\n";
+    Diagonal d(n);
+    d.set(1,1,5); d.set(2,2,8); d.set(3,3,9); d.set(4,4,12);
+    d.display();
+    return 0;
+}

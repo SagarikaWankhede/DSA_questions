@@ -24,3 +24,14 @@ public:
         }
     }
 };
+int main() {
+    int n = 4;
+
+    cout << "\nLower Triangular Matrix:\n";
+    LowerTriangular l(n);
+    l.set(1,1,1); l.set(2,1,2); l.set(2,2,3);
+    l.set(3,1,4); l.set(3,2,5); l.set(3,3,6);
+    l.display();
+    
+    return 0;
+}

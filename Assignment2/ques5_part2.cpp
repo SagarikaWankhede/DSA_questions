@@ -28,4 +28,16 @@ public:
         }
     }
 };
+int main() {
+    int n = 4;
 
+    cout << "\nTri-diagonal Matrix:\n";
+    TriDiagonal t(n);
+    t.set(1,1,1); t.set(1,2,2);
+    t.set(2,1,3); t.set(2,2,4); t.set(2,3,5);
+    t.set(3,2,6); t.set(3,3,7); t.set(3,4,8);
+    t.set(4,3,9); t.set(4,4,10);
+    t.display();
+
+    return 0;
+}
