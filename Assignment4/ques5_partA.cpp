@@ -39,4 +39,3 @@ public:
         return q1.empty();
     }
 };
-
